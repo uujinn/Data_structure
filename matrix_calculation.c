@@ -4,7 +4,8 @@
 
 int main(int argc, char* argv[]){
 
-// 문자형 a,b,c 받아서 int형으로 변환
+	
+	// 프로그램 실행 시 행렬 M(aXb)과 N(bXc)의 크기(a,b,c)를 int타입으로 입력받는다.
     int a = atoi(*(argv + 1));
     int b = atoi(*(argv + 2));
     int c = atoi(*(argv + 3));
@@ -12,19 +13,20 @@ int main(int argc, char* argv[]){
     int i, j, k;
     
     int **M, **N, **L;
-	
+
+	// (aXb)의 크기로 int 타입의 메모리 할당
     M = (int **)malloc(sizeof(int *)*a);
     for (i = 0; i < a; i++){
         *(M + i) = (int*)malloc(sizeof(int)*b);
     }
 
-
+	// (bXc)의 크기로 int 타입의 메모리 할당
     N = (int **)malloc(sizeof(int *)*b);
     for (i = 0; i < b; i++){
         *(N + i) = (int*)malloc(sizeof(int)*c);
     }
 
-
+	// (aXc)의 크기로 int타입의 메모리 할당
     L = (int **)malloc(sizeof(int *)*a);
     for (i = 0; i < a; i++){
         *(L + i) = (int*)malloc(sizeof(int)*c);
