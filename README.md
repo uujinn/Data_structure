@@ -1,3 +1,3 @@
 # data_structure
 
-Studying Data Structure
+## Studying Data Structure
