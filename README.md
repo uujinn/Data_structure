@@ -1,3 +1,4 @@
-# data_structure
+# MME_2020_1
 
-## Studying Data Structure
+## Data Structure 
+## Numerical Method
